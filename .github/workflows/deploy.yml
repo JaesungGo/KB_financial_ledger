@@ -24,12 +24,13 @@ jobs: # Workflow가 수행할 작업 목록
           node-version: '20' # Node.js의 버전은 20
 
       - name: Install dependencies # 설치된 Node 버전을 기반으로 npm 의존성 설치
-        run: |
-          npm install
-          npm i vue-router
-          npm i axios
-          npm i sweetalert2
-          npm install -g json-server
+        uses: bahmutov/npm-install@v1
+        # run: |
+        #   npm install
+        #   npm i vue-router
+        #   npm i axios
+        #   npm i sweetalert2
+        #   npm install -g json-server
 
       - name: Start JSON server
         run: json-server --watch jsonFile/account_book.json --port 3001 & 
