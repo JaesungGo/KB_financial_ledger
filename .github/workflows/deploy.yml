@@ -24,7 +24,8 @@ jobs: # Workflow가 수행할 작업 목록
           node-version: '20' # Node.js의 버전은 20
 
       - name: Install dependencies # 설치된 Node 버전을 기반으로 npm 의존성 설치
-        uses: bahmutov/npm-install@v1
+        run: npm ci
+        working-directory: /home/runner/work/KB_financial_ledger/KB_financial_ledger
         # run: |
         #   npm install
         #   npm i vue-router
