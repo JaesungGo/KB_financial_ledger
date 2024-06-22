@@ -4,7 +4,7 @@
             <p>메뉴</p>
         </div>
         <div class="box" @click="clickHome">
-            <img src="@/../public/image/homeLogo.png" alt="홈 로고" />
+            <img src="@/../public/image/KB_main.jpg" id="logoHome" alt="홈 로고" />
         </div>
         <div class="profileBox box">
             <p class="profileBtn" @click="toggleProfile">프로필</p>
