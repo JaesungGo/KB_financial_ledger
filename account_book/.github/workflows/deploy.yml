@@ -33,7 +33,7 @@ jobs: # Workflow가 수행할 작업 목록
         #   npm install -g json-server
 
       - name: Start JSON server
-        run: json-server --watch jsonFile/account_book.json --port 3001 & 
+        run: json-server --watch db-server/account_book.json --port 3001 & 
 
       - name: Build project # npm run build 명령어를 통해 프로젝트 빌드
         run: npm run build
