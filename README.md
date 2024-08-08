@@ -32,7 +32,7 @@
 - vue-router
 - vue axios
 - components
-- pigma
+- figma
 - json-server (서버 역할)
 ## 협업 규칙
 
